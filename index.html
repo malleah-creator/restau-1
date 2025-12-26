@@ -3,59 +3,82 @@
 <head>    
     <meta charset="UTF-8">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>Menu - Le Gourmet de la Liberté</title> 
+    <title>Menu - Le Gourmet de la Liberté</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>   
-    <h1>Menu de délicieuses bouchées</h1>
+<body>
+    <nav class="top-nav">
+        <ul class="nav-list">
+            <li><a href="#">Le Restaurant</a></li>
+            <li><a href="#">La Carte</a></li>
+            <li><a href="contact.html">Réserver</a></li>
+        </ul>
+    </nav>
 
-    <h2>Entrées</h2>  
-    <ul>        
-        <li>           
-            <strong>Salade Caprese</strong>            
-            <p>Tomates fraîches, mozzarella et basilic arrosés d'un filet de glaçage balsamique.</p>         
-        </li>     
-        <li>           
-            <strong>Verrine Avocat-Crevettes</strong>            
-            <p>Un mélange onctueux d'avocat mûr et de crevettes marinées au citron vert et à l'aneth.</p>         
-        </li>
-        <li>           
-            <strong>Soupe à l'Oignon Tradition</strong>            
-            <p>La classique française avec ses croûtons dorés et son fromage fondant gratiné au four.</p>         
-        </li>
-    </ul>   
+    <header class="hero">
+        <h1 class="main-title">Menu de délicieuses bouchées</h1>
+        <div class="separator"></div>
+    </header>
 
-    <h2>Plats principaux</h2> 
-    <ul>       
-        <li>       
-            <strong>Saumon grillé</strong>      
-            <p>Filet de saumon assaisonné et grillé à la perfection, servi avec une sauce au beurre citronné.</p>    
-        </li>     
-        <li>       
-            <strong>Entrecôte Maître d'Hôtel</strong>      
-            <p>Une pièce de bœuf tendre de 250g, accompagnée de beurre persillé et de frites artisanales.</p>    
-        </li>
-        <li>       
-            <strong>Risotto aux Champignons des Bois</strong>      
-            <p>Riz crémeux cuisiné au bouillon de légumes, agrémenté de cèpes frais et de parmesan affiné.</p>    
-        </li>
-    </ul>    
+    <main class="menu-container">
+        <section class="menu-section">
+            <h2 class="category-name">Entrées</h2>  
+            <div class="items-grid">
+                <div class="item">
+                    <strong>Salade Caprese</strong>
+                    <p>Tomates fraîches, mozzarella et basilic arrosés d'un filet de glaçage balsamique.</p>
+                </div>
+                <div class="item">
+                    <strong>Verrine Avocat-Crevettes</strong>
+                    <p>Un mélange onctueux d'avocat mûr et de crevettes marinées au citron vert et à l'aneth.</p>
+                </div>
+                <div class="item">
+                    <strong>Soupe à l'Oignon Tradition</strong>
+                    <p>La classique française avec ses croûtons dorés et son fromage fondant gratiné au four.</p>
+                </div>
+            </div>
+        </section>
 
-    <h2>Desserts</h2>  
-    <ul>        
-        <li>     
-            <strong>Fondue au chocolat</strong>      
-            <p>Assortiment de fruits et de guimauves servi avec une onctueuse fondue au chocolat.</p>     
-        </li>     
-        <li>     
-            <strong>Tiramisu Maison</strong>      
-            <p>Le classique italien revisité avec un café serré et une crème mascarpone aérienne.</p>     
-        </li>
-        <li>     
-            <strong>Tarte Tatin et Glace Vanille</strong>      
-            <p>Pommes caramélisées sur une pâte sablée croustillante, servie tiède avec sa boule de glace.</p>     
-        </li>
-    </ul> 
+        <section class="menu-section">
+            <h2 class="category-name">Plats principaux</h2> 
+            <div class="items-grid">
+                <div class="item">
+                    <strong>Saumon grillé</strong>
+                    <p>Filet de saumon assaisonné et grillé à la perfection, servi avec une sauce au beurre citronné.</p>
+                </div>
+                <div class="item">
+                    <strong>Entrecôte Maître d'Hôtel</strong>
+                    <p>Une pièce de bœuf tendre de 250g, accompagnée de beurre persillé et de frites artisanales.</p>
+                </div>
+                <div class="item">
+                    <strong>Risotto aux Champignons des Bois</strong>
+                    <p>Riz crémeux cuisiné au bouillon de légumes, agrémenté de cèpes frais et de parmesan affiné.</p>
+                </div>
+            </div>
+        </section>
 
-    <p><a href="contact.html">Contactez-nous pour réserver</a></p> 
+        <section class="menu-section">
+            <h2 class="category-name">Desserts</h2>  
+            <div class="items-grid">
+                <div class="item">
+                    <strong>Fondue au chocolat</strong>
+                    <p>Assortiment de fruits et de guimauves servi avec une onctueuse fondue au chocolat.</p>
+                </div>
+                <div class="item">
+                    <strong>Tiramisu Maison</strong>
+                    <p>Le classique italien revisité avec un café serré et une crème mascarpone aérienne.</p>
+                </div>
+                <div class="item">
+                    <strong>Tarte Tatin et Glace Vanille</strong>
+                    <p>Pommes caramélisées sur une pâte sablée croustillante, servie tiède avec sa boule de glace.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-contact">
+        <p><a href="contact.html" class="cta-button">Contactez-nous pour réserver</a></p> 
+    </footer>
 </body>
 </html>
